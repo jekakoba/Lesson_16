@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:regular,600&display=swap" rel="stylesheet">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header"></header>
+
+		<main class="page">
+			<div class="box">
+				<div class="box__container">
+					<div class="card">
+						<div class="card__body">
+							<h3 class="card__title">Make an appointment</h3>
+							<form action="#" class="card__form form">
+
+								<div class="form__rows">
+									<div class="form__line">
+										<input class="form__input" type="text" required name="username" value=""
+											placeholder="Name" autocomplete="off">
+									</div>
+									<div class="form__line">
+										<input class="form__input" type="email" required name="Email" value=""
+											placeholder="Email" autocomplete="off">
+									</div>
+									<div class="form__line">
+										<input class="form__input" type="tel" required name="phone number" value=""
+											placeholder="Phone Number" autocomplete="off">
+									</div>
+									<div class="form__line">
+										<input class="form__input" type="text" required name="Select Service" value=""
+											placeholder="Select Service" autocomplete="off">
+									</div>
+									<div class="form__textarea">
+										<textarea class="form__input form__input_area" required name="Tell us"
+											placeholder="Tell us about your puppers include his/her name"></textarea>
+									</div>
+
+								</div>
+								<div class="form__footer">
+									<button class="form__button" type="submit">Make an Appointment</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="summary">
+						<div class="summary__body">
+							<h3 class="summary__title">Summary</h3>
+							<div class="summary__header">
+								<p class="summary__spoiler  spoiler">Estimate Shipping and Tax</p>
+								<p class="summary__description">Enter your destination to get a shipping estimate.</p>
+							</div>
+							<form class="summary__form form-summary" action="#">
+								<div class="form-summary__rows">
+									<div class="form-summary__address-box">
+										<div class="form-summary__line">
+											<p class="form-summary__heading heading">Country</p>
+											<select class="form-summary__input" name="cities">
+												<option value="1">Australia</option>
+												<option value="2">Canada</option>
+												<option value="3">Ukraine</option>
+												<option value="4">France</option>
+											</select>
+										</div>
+										<div class="form-summary__line">
+											<p class="form-summary__heading heading">State/Province</p>
+											<input class="form-summary__input" type="text" required name="address"
+												value="" autocomplete="off">
+										</div>
+										<div class="form-summary__line">
+											<p class="form-summary__heading heading">Zip/Postal Code</p>
+											<input class="form-summary__input" type="text" required name="Postal Code"
+												value="" autocomplete="off">
+										</div>
+									</div>
+
+									<div class="form-summary__radibuttons radibuttons">
+										<p class="radibuttons__heading">Standard Rate</p>
+										<div class="radibuttons__line">
+
+											<input checked class="radibuttons__radio-btn" id="standard" value=""
+												name="price" type="radio">
+											<label class="radibuttons__lable" for="standard">Price may vary depending
+												on the item/destination. Shop Staff will contact you. $21.00</label>
+										</div>
+										<p class="radibuttons__heading ">Pickup from store Rate</p>
+										<div class="radibuttons__line">
+
+											<input class="radibuttons__radio-btn" id="pickup" value="" name="price"
+												type="radio">
+											<label class="radibuttons__lable" for="pickup">1234 Street Adress City
+												Address, 1234 $0.00</label>
+										</div>
+									</div>
+
+									<div class="form-summary__line">
+										<p class="form-summary__spoiler spoiler">Apply Discount Code</p>
+										<p class="form-summary__heading heading">Enter discount code</p>
+										<input class="form-summary__input" type="text" placeholder="Enter Discount code"
+											name="Discount" value="" autocomplete="off">
+									</div>
+
+								</div>
+
+								<button class="form-summary__button button" type="submit">Apply Discount</button>
+
+							</form>
+						</div>
+					</div>
+					<div class="checkout">
+						<div class="checkout__body">
+							<h3 class="checkout__title">Shipping Address</h3>
+							<form class="checkout__form form-checkout" action="#">
+
+								<div class="form-checkout__wrapper">
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="Email_2">Email Address <span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input" id="Email_2" value="" name="email_2"
+											type="email">
+									</div>
+									<p class="form-checkout__text">You can create an account after checkout.</p>
+
+
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="First_name">First Name <span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input" id="First_name" value="" name="First_name"
+											type="text">
+									</div>
+
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="Last_Name">Last Name<span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input" id="Last_Name" value="" name="Last_Name"
+											type="text">
+									</div>
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="Company">Company<span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input" id="Company" value="" name="Name Company"
+											type="text">
+									</div>
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="address_2">Street Address<span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input form-checkout__input_margin" id="address_2"
+											value="" name="address_2" type="text">
+										<input class="form-checkout__input" value="" name="address_2" type="text">
+									</div>
+
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="City">City <span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input" id="City" value="" name="City" type="text">
+									</div>
+
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="regions">State/Province<span
+												class="red-star">*</span></label>
+										<select class="form-checkout__input" name="regions" id="regions">
+											<option value="1">Please, select a region, state or province</option>
+											<option value="2">Region№2</option>
+											<option value="3">Region№3</option>
+											<option value="4">Region№3</option>
+										</select>
+									</div>
+
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="Postal">Zip/Postal Code <span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input" id="Postal" value="" name="Postal "
+											type="text">
+									</div>
+
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="Country">Country<span
+												class="red-star">*</span></label>
+										<select class="form-checkout__input" name="Country" id="Country">
+											<option value="1">United States</option>
+											<option value="2">Spain</option>
+											<option value="3">China</option>
+											<option value="4">France</option>
+										</select>
+									</div>
+
+									<div class="form-checkout__line">
+										<label class="form-checkout__lable block" for="Phone">Phone Number<span
+												class="red-star">*</span></label>
+										<input class="form-checkout__input" id="Phone" value="" name="Phone Number "
+											type="tel">
+									</div>
+								</div>
+
+								<div class="form-checkout__radio radio ">
+									<p class="radio__description block">Standard Rate</p>
+									<div class="radio__line">
+
+										<input class="radio__input" id="default-price" value="" name="Price-1"
+											type="radio">
+										<label for="default-price" class="radio__lable">Price may vary dependingon
+											the
+											item/destination.
+											Shop Staff will contact you. $21.00</label>
+										<div class="radio__price">
+											<span>$21.00</span>
+										</div>
+
+									</div>
+									<p class="radio__description block">Pickup from store</p>
+									<div class="radio__line">
+
+										<input class="radio__input" id="standard-price" value="" name="Price-1"
+											type="radio">
+										<label for="standard-price" class="radio__lable">1234 Street Adress City
+											Address,
+											1234</label>
+										<div class="radio__price">
+											<span>$0.00</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-checkout__button">
+									<button class="form-checkout__btn button button_small" type="submit">Next</button>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+
+		<footer class="footer"></footer>
+	</div>
+
+</body>
+
+</html>
