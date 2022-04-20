@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:regular,600&display=swap" rel="stylesheet">
-	<title>Lesson 16</title>
+	<title>Lesson_16</title>
 </head>
 
 <body>
@@ -129,8 +129,8 @@
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="Email_2">Email Address <span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input" id="Email_2" value="" name="email_2"
-											type="email">
+										<input class="form-checkout__input" required id="Email_2" value=""
+											name="email_2" type="email">
 									</div>
 									<p class="form-checkout__text">You can create an account after checkout.</p>
 
@@ -138,70 +138,73 @@
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="First_name">First Name <span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input" id="First_name" value="" name="First_name"
-											type="text">
+										<input class="form-checkout__input" required id="First_name" value=""
+											name="First_name" type="text">
 									</div>
 
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="Last_Name">Last Name<span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input" id="Last_Name" value="" name="Last_Name"
-											type="text">
+										<input class="form-checkout__input" required id="Last_Name" value=""
+											name="Last_Name" type="text">
 									</div>
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="Company">Company<span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input" id="Company" value="" name="Name Company"
-											type="text">
+										<input class="form-checkout__input" required id="Company" value=""
+											name="Name Company" type="text">
 									</div>
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="address_2">Street Address<span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input form-checkout__input_margin" id="address_2"
-											value="" name="address_2" type="text">
+										<input class="form-checkout__input form-checkout__input_margin" required
+											id="address_2" value="" name="address_2" type="text">
 										<input class="form-checkout__input" value="" name="address_2" type="text">
 									</div>
 
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="City">City <span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input" id="City" value="" name="City" type="text">
+										<input class="form-checkout__input" id="City" required value="" name="City"
+											type="text">
 									</div>
 
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="regions">State/Province<span
 												class="red-star">*</span></label>
-										<select class="form-checkout__input" name="regions" id="regions">
-											<option value="1">Please, select a region, state or province</option>
-											<option value="2">Region№2</option>
-											<option value="3">Region№3</option>
-											<option value="4">Region№3</option>
+										<select class="form-checkout__input" required name="regions" id="regions">
+											<option value="" selected disabled>Please, select a region, state or
+												province
+											</option>
+											<option value="Region-1">Region№1</option>
+											<option value="Region-2">Region№2</option>
+											<option value="Region-3">Region№3</option>
 										</select>
 									</div>
 
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="Postal">Zip/Postal Code <span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input" id="Postal" value="" name="Postal "
+										<input class="form-checkout__input" required id="Postal" value="" name="Postal "
 											type="text">
 									</div>
 
 									<div class="form-checkout__line">
-										<label class="form-checkout__lable block" for="Country">Country<span
+										<label class="form-checkout__lable block" for="Countrys">Country<span
 												class="red-star">*</span></label>
-										<select class="form-checkout__input" name="Country" id="Country">
-											<option value="1">United States</option>
-											<option value="2">Spain</option>
-											<option value="3">China</option>
-											<option value="4">France</option>
+										<select class="form-checkout__input" name="Countrys" id="Countrys" required>
+											<option value="">Spain</option>
+											<option selected value="">United States</option>
+											<option value="">China</option>
+											<option value="">France</option>
 										</select>
 									</div>
 
 									<div class="form-checkout__line">
 										<label class="form-checkout__lable block" for="Phone">Phone Number<span
 												class="red-star">*</span></label>
-										<input class="form-checkout__input" id="Phone" value="" name="Phone Number "
-											type="tel">
+										<input class="form-checkout__input" id="Phone" required value=""
+											name="Phone Number " type="tel">
 									</div>
 								</div>
 
@@ -209,7 +212,7 @@
 									<p class="radio__description block">Standard Rate</p>
 									<div class="radio__line">
 
-										<input class="radio__input" id="default-price" value="" name="Price-1"
+										<input class="radio__input" id="default-price" required value="" name="Price-1"
 											type="radio">
 										<label for="default-price" class="radio__lable">Price may vary dependingon
 											the
@@ -240,10 +243,37 @@
 						</div>
 
 					</div>
+
+					<div class="customer">
+						<div class="customer__body">
+							<h3 class="customer__title">Registered Customers</h3>
+							<p class="customer__sub-title">If you have an account, sign in with your email address.</p>
+							<form class="customer__form form-customer" action="#">
+								<div class="form-customer__wrapper">
+									<div class="form-customer__line">
+										<label class="form-customer__lable" for="email">Email<span class="red-star">
+												*</span></label>
+										<input class="form-customer__input" id="email" autocomplete="off" required
+											placeholder="Your Email" value="" name="email " type="email">
+									</div>
+									<div class="form-customer__line">
+										<label class="form-customer__lable" for="password">Password<span
+												class="red-star">
+												*</span></label>
+										<input class="form-customer__input" id="password" required autocomplete="off"
+											placeholder="Your password" value="" name="password " type="password">
+									</div>
+								</div>
+								<div class="form-customer__footer">
+									<button class="form-customer__button" type="submit">Sign In</button>
+									<a class="form-customer__link-password" href="#">Forgot Your Password?</a>
+								</div>
+
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
-
-
 		</main>
 
 		<footer class="footer"></footer>

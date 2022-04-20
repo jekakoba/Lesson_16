@@ -42,7 +42,7 @@ body {
 	line-height: 1.5;
 	border: 2px solid #0156FF;
 	border-radius: 50px;
-	padding: 22px 10px;
+	padding: 15px 10px;
 	transition: all 0.3s ease 0s;
 }
 
@@ -50,7 +50,7 @@ body {
 .box__container {
 	display: flex;
 	flex-wrap: wrap;
-	row-gap: 20px;
+	row-gap: 50px;
 	justify-content: space-between;
 }
 
@@ -576,4 +576,118 @@ body {
 .form-checkout__btn:hover {
 	background-color: white;
 	color: #0156FF;
+}
+
+
+.customer {
+	font-family: Poppins;
+	color: black;
+	font-size: 14px;
+}
+
+.customer__body {
+	background: #F5F7FF;
+	max-width: 446px;
+	padding: 50px;
+}
+
+.customer__title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.customer__title:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+
+.customer__sub-title {
+	font-weight: 300;
+	line-height: 2;
+}
+
+.customer__sub-title:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+
+
+
+.form-customer {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+
+
+
+.form-customer__wrapper>*:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+
+
+.form-customer__lable {
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.form-customer__input {
+	cursor: pointer;
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #A2A6B0;
+	border-radius: 4px;
+	padding: 17px;
+}
+
+.form-customer__input::placeholder {
+	color: #A2A6B0;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+.form-customer__footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 23px;
+	margin-top: 20px;
+}
+
+.form-customer__button {
+	width: 40%;
+	cursor: pointer;
+	background-color: transparent;
+	color: white;
+	font-weight: 600;
+	line-height: 1.5;
+	background-color: #0156FF;
+	border-radius: 50px;
+	padding: 15px 10px;
+	transition: all 0.4s ease 0s;
+}
+
+.form-customer__button:hover {
+	color: #0156FF;
+	background-color: white;
+	border: 1px solid #0156FF;
+}
+
+.form-customer__link-password {
+	color: #0156FF;
+	font-weight: 400;
+	line-height: 1.4;
+	transition: all 0.3s ease 0s;
+
+}
+
+.form-customer__link-password:hover {
+	text-decoration: underline;
+	color: #0140be;
 }
